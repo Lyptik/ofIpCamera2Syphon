@@ -1,12 +1,12 @@
 ofIpCamera2Syphon
 =================
 
-Openframeworks application to grab a JPEG IP cam and output it to Syphon
+Openframeworks application to grab a JPEG stream (*.cgi) from an IP camera and output it to Syphon
 
 Addons :
 
-ofxIpVideoGrabber
-ofxSyphon
+- ofxIpVideoGrabber
+- ofxSyphon
 
 Camera compatibility :
 
