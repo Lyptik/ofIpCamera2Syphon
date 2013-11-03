@@ -252,7 +252,11 @@ void ofApp::draw(){
         ofDrawBitmapString("Press [d] to draw", 10, 10+12);
     }
     
-    m_oSyphonServer.publishTexture(&grabbers[0]->getTextureReference());
+    // We only publish the first camera to Syphon
+    if(grabbers[0]->isFrameNew())
+    {
+        m_oSyphonServer.publishTexture(&grabbers[0]->getTextureReference());
+    }
 }
 
 //------------------------------------------------------------------------------
