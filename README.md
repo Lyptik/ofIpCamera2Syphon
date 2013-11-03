@@ -7,7 +7,7 @@ Tested with OF 0.8.0 and Bluestork BS-CAM-OUT camera
 
 How to use :
 
-- Grab a release here :
+- Grab a release here : https://github.com/Lyptik/ofIpCamera2Syphon/releases
 - Click on the application and "open package"
 - Open Contents/Resources/data/streams.xml
 - Fill it with your stream
@@ -25,9 +25,7 @@ Camera compatibility :
 
 Notes :
 
-You should check the very good IPCAM2SYPHON
-
-https://github.com/bakercp/IPCAM2SYPHON
+You should check the very good IPCAM2SYPHON : https://github.com/bakercp/IPCAM2SYPHON
 
 Addons :
 
