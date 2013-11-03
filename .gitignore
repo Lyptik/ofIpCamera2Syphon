@@ -11,3 +11,10 @@
 *.lai
 *.la
 *.a
+
+# Binary
+*.app
+
+# Xcode
+*.xccheckout
+xcuserdata
