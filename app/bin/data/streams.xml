@@ -1,6 +1,7 @@
 <streams>
-
-	<stream url="http://148.61.142.228/axis-cgi/mjpg/video.cgi?resolution=320x240"/>
+    <!-- Example formatting : bluestork default -->
+	<!-- <stream url="http://192.168.1.20/videostream.cgi" username="admin" password=""/> -->
+    <stream url="http://148.61.142.228/axis-cgi/mjpg/video.cgi?resolution=320x240"/>
 	<stream url="http://82.79.176.85:8081/axis-cgi/mjpg/video.cgi?resolution=320x240"/>
 	<stream url="http://81.8.151.136:88/axis-cgi/mjpg/video.cgi?resolution=320x240"/>
 	<stream url="http://216.8.159.21/axis-cgi/mjpg/video.cgi?resolution=320x240"/>

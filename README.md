@@ -11,6 +11,10 @@ How to use :
 - Click on the application and "open package"
 - Open Contents/Resources/data/streams.xml
 - Fill it with your stream
+		
+		<!-- Example stream for the Bluestork BS-CAM-OUT infrared camera -->
+		<stream url="http://192.168.1.20/videostream.cgi" username="admin" password=""/>
+
 
 Controls :
 
