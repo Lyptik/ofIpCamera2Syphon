@@ -41,12 +41,12 @@ void ofApp::setup()
         SharedIPVideoGrabber c = IPVideoGrabber::makeShared();
 
         // if your camera uses standard web-based authentication, use this
-        // c->setUsername(cam.username);
-        // c->setPassword(cam.password);
+        c->setUsername(cam.getUsername());
+        c->setPassword(cam.getPassword());
         
         // if your camera uses cookies for authentication, use something like this:
-        // c->setCookie("user", cam.username);
-        // c->setCookie("password", cam.password);
+        //c->setCookie("user", cam.username);
+        //c->setCookie("password", cam.password);
         
         c->setCameraName(cam.getName());
         c->setURI(cam.getURL());
