@@ -60,10 +60,20 @@ void ofApp::setup()
     }
     
     #ifdef __APPLE__
-    m_oSyphonServer.setName("ipCamera");
+    _syphonServerName = "syphon";
+    
+    ofxXmlSettings XML;
+    
+    if(XML.loadFile("streams.xml"))
+    {
+        XML.pushTag("syphon");
+        _syphonServerName = XML.getValue("name","syphon");
+        XML.popTag();
+    }
+    _syphonServer.setName(_syphonServerName);
     #endif
     
-    bDebug = true;
+    bDebug = false;
 }
 
 //------------------------------------------------------------------------------
@@ -145,7 +155,6 @@ void ofApp::videoResized(const void* sender, ofResizeEventArgs& arg)
         }
     }
 }
-
 
 //------------------------------------------------------------------------------
 void ofApp::update()
@@ -255,7 +264,7 @@ void ofApp::draw(){
     // We only publish the first camera to Syphon
     if(grabbers[0]->isFrameNew())
     {
-        m_oSyphonServer.publishTexture(&grabbers[0]->getTextureReference());
+        _syphonServer.publishTexture(&grabbers[0]->getTextureReference());
     }
 }
 

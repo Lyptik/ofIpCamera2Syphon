@@ -114,7 +114,8 @@ public:
     void videoResized(const void* sender, ofResizeEventArgs& arg);
     
     #ifdef __APPLE__
-    ofxSyphonServer m_oSyphonServer;
+    ofxSyphonServer _syphonServer;
+    std::string _syphonServerName;
     #endif
     
     bool bDebug;

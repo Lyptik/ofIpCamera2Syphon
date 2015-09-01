@@ -1,3 +1,6 @@
+<syphon>
+    <name>"ipCamera"</name>
+</syphon>
 <streams>
     <!-- Example formatting : bluestork default -->
 	<!-- <stream url="http://192.168.1.20/videostream.cgi" username="admin" password=""/> -->
