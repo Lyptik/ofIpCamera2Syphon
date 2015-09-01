@@ -13,13 +13,13 @@
 		630A34351825CB8E009E1853 /* ofxSyphonClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 630A342A1825CB8E009E1853 /* ofxSyphonClient.mm */; };
 		630A34361825CB8E009E1853 /* ofxSyphonServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 630A342C1825CB8E009E1853 /* ofxSyphonServer.mm */; };
 		630A34371825CB8E009E1853 /* ofxSyphonServerDirectory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 630A342E1825CB8E009E1853 /* ofxSyphonServerDirectory.mm */; };
-		630A343E1825CBE4009E1853 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 630A34221825CB8E009E1853 /* Syphon.framework */; };
+		630A343E1825CBE4009E1853 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 630A34221825CB8E009E1853 /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		63D7F24418266597000D588B /* streams.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63D7F24118266515000D588B /* streams.xml */; };
 		63D7F24618266AFB000D588B /* icon.icns in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63D7F245182665EE000D588B /* icon.icns */; };
 		63b57ac5bf4ef088491e0317dbb2ecaa /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50df87d612c5aae17aafa6c02c6bc570 /* ofxXmlSettings.cpp */; };
 		933a2227713c720ceff80fd967d0a8ee /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2b40eda85beb63e46785bc299a638898 /* tinyxml.cpp */; };
 		9d44dc88ef9e7991b4a09951e2e4769f /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 832bdc407620cdba568b713d2252c43c /* tinyxmlerror.cpp */; };
-		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -398,7 +398,7 @@
 		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0640;
 			};
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ofIpCamera2Syphon" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -516,7 +516,7 @@
 					"-lpthread",
 					"-mtune=native",
 				);
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -554,7 +554,7 @@
 					"-lpthread",
 					"-mtune=native",
 				);
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
